@@ -32,11 +32,32 @@ p {
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
-
 /* End of css reset */
-body {
-  min-height: 100vh;
 
-  background: no-repeat center url(images/delicious_in_dungeon.png);
+body {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.header {
+  flex: 3;
+
+  background: no-repeat center url(images/header_bg.png);
+  background-size: cover;
+}
+
+.main {
+  flex: 5;
+  min-width: 45em;
+
+  background: no-repeat center url(images/main_bg.png);
+  background-size: cover;
+}
+
+.banner {
+  flex: 1;
+
+  background: no-repeat center url(images/banner_bg.jpg);
   background-size: cover;
 }
