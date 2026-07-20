@@ -34,22 +34,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* End of css reset */
 
+:root {
+  --main-color: #01030E;
+  --main-color-trans: #01030e6e;
+  --second-color: #040c3a;
+  --text-color: #f3f5ff;
+}
+
 body {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
+
+  color: var(--text-color);
 }
 
 .header {
   flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: center;
 
   background: no-repeat center url(images/header_bg.png);
   background-size: cover;
 }
 
+.header-title {
+  position: relative;
+  top: 10rem;
+  min-width: 35rem;
+
+  font-size: 5rem;
+
+  background-color: var(--main-color-trans);
+}
+
 .main {
   flex: 5;
-  min-width: 45em;
+  min-width: 45rem;
 
   background: no-repeat center url(images/main_bg.png);
   background-size: cover;
@@ -60,4 +84,8 @@ body {
 
   background: no-repeat center url(images/banner_bg.jpg);
   background-size: cover;
+}
+
+.credit-photo {
+  font-size: 0.8rem;
 }
