@@ -9,7 +9,7 @@ Link: https://www.joshwcomeau.com/css/custom-css-reset/ */
 }
 
 body {
-  line-height: 1.5;
+  line-height: 1.3;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -35,10 +35,16 @@ h1, h2, h3, h4, h5, h6 {
 /* End of css reset */
 
 :root {
+  --h1-size: 5rem;
+  --h2-size: 3rem;
+
   --main-color: #01030E;
   --main-color-trans: #01030e6e;
-  --second-color: #040c3a;
-  --text-color: #f3f5ff;
+  --form-color: #f2f2f5;
+  --form-shadow-color: #5d5e64;
+  --text-color: #f2f2f5;
+  --btn-color: #4d5790;
+  --btn-shadow-color: #101324;
 }
 
 body {
@@ -49,15 +55,22 @@ body {
   color: var(--text-color);
 }
 
-.header {
-  flex: 3;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem 0;
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
 
-  text-align: center;
+button {
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  color: inherit;
+}
+
+.header {
+  position: relative;
+  flex: 3;
 
   background: no-repeat center url(images/header_bg.png);
   background-size: cover;
@@ -65,22 +78,87 @@ body {
 
 .header-title {
   position: relative;
-  top: 10rem;
+  top: 24vh;
+  padding: 1rem;
   min-width: 35rem;
 
-  font-size: 5rem;
+  text-align: center;
+  font-size: var(--h1-size);
 
   background-color: var(--main-color-trans);
 }
 
 .main {
+  position: relative;
   flex: 5;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 50rem;
   min-width: 45rem;
-  padding: 1rem 0;
+  padding: 1rem 3rem;
 
   background: no-repeat center url(images/main_bg.png);
   background-size: cover;
+}
+
+.main-desc {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.main-button {
+  width: 13rem;
+  padding: 0.6rem;
+
+  font-weight: bold;
+
+  background-color: var(--btn-color);
+  box-shadow: 3px 3px 1px 1px var(--btn-shadow-color);
+}
+
+.form {
+  margin: 0 -3rem;
+  padding: 1.5rem 3rem;
+
+  color: var(--main-color);
+
+  background-color: var(--form-color);
+  box-shadow: 0px 0px 10px 2px var(--form-shadow-color);
+}
+
+.form-title {
+  margin-bottom: 0.5rem;
+}
+
+.form-table {
+  margin-left: -2rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-table td {
+  padding: 0.5rem 2rem;
+}
+
+.form-table td * {
+  display: block;
+}
+
+.form-table label {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.form-table input {
+  width: 230px;
+  border-radius: 5px;
+}
+
+.main-link {
+  font-weight: bold;
+  color: var(--btn-color);
 }
 
 .banner {
@@ -91,5 +169,11 @@ body {
 }
 
 .credit-photo {
+  position: absolute;
+  top: 95%;
+  left: 0px;
+  width: 100%;
+
+  text-align: center;
   font-size: 0.8rem;
 }
