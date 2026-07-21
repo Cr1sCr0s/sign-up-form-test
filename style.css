@@ -1,3 +1,5 @@
+/* Gin and Soda font by Guaraldo Fonts
+Link: https://www.1001fonts.com/gin-and-soda-personal-use-font.html */
 @font-face {
   font-family: 'Gin and Soda Personal Use';
   src: url('fonts/GinandSoda.woff2') format('woff2'),
@@ -87,6 +89,8 @@ button {
   background-size: cover;
 }
 
+/* Sakura logo by SoyGalem
+Link: https://thenounproject.com/icon/sakura-1348072/ */
 .header-logo {
   position: relative;
   bottom: 5px;
@@ -97,15 +101,15 @@ button {
 
 .header-content {
   position: relative;
+  top: 23vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 23vh;
+
   padding: 1rem;
   padding-top: 2.5rem;
   min-width: 35rem;
-
-
 
   background-color: var(--main-color-trans);
 }
@@ -117,12 +121,13 @@ button {
 
 .main {
   position: relative;
-  flex: 5;
 
+  flex: 5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 3rem;
+
   max-width: 50rem;
   min-width: 45rem;
   padding: 1rem 3rem;
@@ -229,6 +234,7 @@ button {
   position: absolute;
   top: 95%;
   left: 0px;
+  
   width: 100%;
 
   text-align: center;
