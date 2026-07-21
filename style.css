@@ -20,6 +20,7 @@ img, picture, video, canvas, svg {
 
 input, button, textarea, select {
   font: inherit;
+  color: inherit;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -45,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   --text-color: #f2f2f5;
   --btn-color: #4d5790;
   --btn-shadow-color: #101324;
+  --invalid-color: #d52828;
 }
 
 body {
@@ -78,7 +80,7 @@ button {
 
 .header-title {
   position: relative;
-  top: 24vh;
+  top: 23vh;
   padding: 1rem;
   min-width: 35rem;
 
@@ -106,7 +108,6 @@ button {
 
 .main-desc {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 .main-button {
@@ -115,8 +116,13 @@ button {
 
   font-weight: bold;
 
+  border: 2px solid transparent;
   background-color: var(--btn-color);
   box-shadow: 3px 3px 1px 1px var(--btn-shadow-color);
+}
+
+.main-button:hover {
+  border: 2px solid var(--form-color);
 }
 
 .form {
@@ -149,16 +155,42 @@ button {
 .form-table label {
   font-weight: bold;
   font-size: 0.8rem;
+  color: var(--main-color);
 }
 
 .form-table input {
-  width: 230px;
+  width: 18rem;
+  padding: 0.3rem 0.5rem;
+
   border-radius: 5px;
+  border: 1px solid var(--main-color);
+  background-color: inherit;
+}
+
+.form-table input:hover {
+  box-shadow: 1px 1px 1px 1px var(--form-shadow-color);
+}
+
+.form-table input:focus {
+  outline: 2px solid var(--btn-color);
+  box-shadow: 1px 1px 1px 1px var(--form-shadow-color);
+}
+
+.form-table input:user-invalid {
+  outline: 1px solid var(--invalid-color);
+}
+
+.form-table input:focus:user-invalid {
+  outline: 1px solid var(--invalid-color);
 }
 
 .main-link {
   font-weight: bold;
   color: var(--btn-color);
+}
+
+.main-link:hover {
+  text-decoration: underline;
 }
 
 .banner {
