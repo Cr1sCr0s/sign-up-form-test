@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign-up Form Example</title>
+  <title>Sign up</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,6 +13,51 @@
   </header>
 
   <main class="main">
+    <p>This is not a real online service. Although, you're free to think of this as a site to help you watch anime for free. Sign up <em>now</em> to get started.</p>
+    <p>You <em>know</em> you want to.</p>
+    <form action="#" method="get" class="form">
+      <section>
+        <h2>Let's do this!</h2>
+        <table>
+          <tr>
+            <td>
+              <label for='fname'>FIRST NAME</label>
+              <input id='fname' name='fname' type='text'/>      
+            </td>
+            <td>
+              <label for='lname'>LAST NAME</label>
+              <input id='lname' name='lname' type='text'/>      
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for='email'>EMAIL</label>
+              <input id='email' name='email' type='email'/>      
+            </td>
+            <td>
+              <label for='phone-no'>PHONE NO</label>
+              <input id='phone-no' name='phone-no' type='tel'/>      
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for='password'>PASSWORD</label>
+              <input id='password' name='password' type='password'/>      
+            </td>
+            <td>
+              <label for='confirm-password'>CONFIRM PASSWORD</label>
+              <input id='confirm-password' name='confirm-password' type='password'/>      
+            </td>
+          </tr>
+        </table>
+      </section>
+      <button type="submit">Create Account</button>
+    </form>
+    <p>
+      Already have an account?
+      <a>Log in</a>
+    </p>
+    <p class="credit-photo">photo from "One Punch Man"</p>
   </main>
 
   <div class="banner"></div>
