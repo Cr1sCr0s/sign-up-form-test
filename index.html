@@ -36,9 +36,9 @@
     <form action="" method="" id="sign-up" class="form">
       <h2 class="form-title">Let's do this!</h2>
 
-      <table class="form-table">
-        <tr>
-          <td>
+      <div class="form-table">
+        <div class="form-row">
+          <div class="form-field">
             <label for='fname'>FIRST NAME *</label>
             <input 
               id='fname' 
@@ -47,9 +47,9 @@
               placeholder="Natsuki"
               minlength="1"
               maxlength="40"
-              required/>      
-          </td>
-          <td>
+              required/>
+          </div>
+          <div class="form-field">
             <label for='lname'>LAST NAME</label>
             <input 
               id='lname' 
@@ -57,21 +57,20 @@
               type='text'
               placeholder="Subaru"
               minlength="1"
-              maxlength="40"/>      
-          </td>
-        </tr>
-
-        <tr>
-          <td>
+              maxlength="40"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
             <label for='email'>EMAIL *</label>
             <input 
               id='email' 
               name='email' 
               type='email' 
               placeholder="barusu@gmail.com"
-              required/>      
-          </td>
-          <td>
+              required/>    
+          </div>
+          <div class="form-field">
             <label for='phone-no'>PHONE NO</label>
             <input 
               id='phone-no' 
@@ -81,30 +80,29 @@
               minlength="11"
               maxlength="11"
               pattern="09[0-9]{9}"/>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
             <label for='password'>PASSWORD *</label>
             <input 
               id='password' 
               name='password' 
               type='password' 
               minlength="8"
-              required/>      
-          </td>
-          <td>
+              required/>    
+          </div>
+          <div class="form-field">
             <label for='confirm-password'>CONFIRM PASSWORD *</label>
             <input 
               id='confirm-password' 
               name='confirm-password' 
               type='password'
               minlength="8"
-              required/>    
-          </td>
-        </tr>
-      </table>
+              required/>
+          </div>
+        </div>
+      </div>
     </form>
 
     <button type="submit" form="sign-up" class="main-button">Create Account</button>

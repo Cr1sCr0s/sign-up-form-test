@@ -170,16 +170,18 @@ Link: https://thenounproject.com/icon/sakura-1348072/ */
 }
 
 .form-table {
-  margin-left: -2rem;
   margin-bottom: 0.5rem;
 }
 
-.form-table td {
-  padding: 0.5rem 2rem;
+.form-row {
+  display: flex;
+  gap: 4rem;
+  padding: 0.5rem 0;
 }
 
-.form-table td * {
-  display: block;
+.form-field {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-table label {
@@ -234,7 +236,7 @@ Link: https://thenounproject.com/icon/sakura-1348072/ */
   position: absolute;
   top: 95%;
   left: 0px;
-  
+
   width: 100%;
 
   text-align: center;
