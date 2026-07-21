@@ -78,16 +78,31 @@ button {
   background-size: cover;
 }
 
-.header-title {
+.header-logo {
   position: relative;
+  bottom: 15px;
+  display: inline;
+  width: 150px;
+}
+
+.header-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   top: 23vh;
   padding: 1rem;
+  padding-top: 2.5rem;
   min-width: 35rem;
 
-  text-align: center;
-  font-size: var(--h1-size);
+
 
   background-color: var(--main-color-trans);
+}
+
+.header-title {
+  font-size: var(--h1-size);
 }
 
 .main {
