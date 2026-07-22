@@ -65,6 +65,7 @@ body {
   flex-direction: row;
   min-height: 100vh;
 
+  font-family: system-ui, Roboto, sans-serif;
   color: var(--text-color);
 }
 
